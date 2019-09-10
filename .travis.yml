@@ -9,8 +9,6 @@ services:
 env:
   - NODE_ENV=ci
   - PORT=3000
-before_script:
-  - npm start &
 cache:
   directories:
     - node_modules
