@@ -1,16 +1,13 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 dist: xenial
-sudo: required
 services:
   - mongodb
   - redis-server
 env:
   - NODE_ENV=ci
   - PORT=3000
-before_script:
-  - npm start &
 cache:
   directories:
     - node_modules
