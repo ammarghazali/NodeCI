@@ -9,7 +9,14 @@ class BlogShow extends Component {
 
   renderImage() {
     if (this.props.blog.imageUrl) {
-      return <img src={this.props.blog.imageUrl} url="" />; //
+      return (
+        <img
+          src={
+            "https://www.shutterstock.com/search/gaming" +
+            this.props.blog.imageUrl
+          }
+        />
+      ); //
     }
   }
 
